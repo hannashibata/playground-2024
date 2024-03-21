@@ -343,10 +343,10 @@ body.demo::before {
 }
 
 /* ID AREA */
-.site-id h1 {
+.site-id {
     font-size: 1.5em;
     margin: 0;
-    padding-top: .4em;
+    padding: 0;
     text-decoration: none;
 }
 
@@ -356,7 +356,7 @@ body.demo::before {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -404,29 +404,30 @@ section {
     border: 1px solid rgb(0, 0, 0 /.3);
 }
 
-
 /* HERO */
 
-/* .hero,
-.hero.home, */
-.container.home {
+.hero.home {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    position: relattive;
-    /* background-color: transparent;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: transparent;
     background-repeat: no-repeat;
     padding: 0;
-    margin-bottom: 0; */
+    margin-bottom: 0;
 }
 
 .slideshow {
+    z-index: -1; 
+    filter: brightness(.9);
     margin: 0;
     padding: 0;
     position: absolute;
     width: 100%;
     height: 100vh;
-    z-index: -1; 
     background-size: cover;
     background-position: center;
     animation: slideAnimation 12s infinite;
@@ -438,31 +439,35 @@ section {
 
 .slideshow:nth-child(2) {
     background-image: url('../img/slideshow-02.jpg');
-    animation-delay: 2s;
+    animation-delay: 3s;
 }
 
 .slideshow:nth-child(3) {
     background-image: url('../img/slideshow-03.jpg');
-    animation-delay: 4s;
+    animation-delay: 6s;
+}
+
+.slideshow:nth-child(4) {
+    background-image: url('../img/slideshow-04.jpg');
+    animation-delay: 9s;
 }
 
 @keyframes slideAnimation {
     0% {opacity: 0;}
     33.333% {opacity: 1;}
-    66.666% {opacity: 0;}
+    66.6666% {opacity: 1;}
     100% {opacity: 0;}
 }
 
-
-.hero.home h1,
-.hero.home  p {
+.hero-title {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    display: block;
-    /* justify-content: center;
-    align-items: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* SUB PAGES ---------- */ 
