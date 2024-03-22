@@ -61,7 +61,7 @@ body { background-color: var(--my-white); }
 -------------------- */
 
 body {
-	font-family: 'Courier New', Courier, monospace;
+	font-family: karla, sans-serif;
 	font-size: 88.75%;  /* 14pt */
 	line-height: 1.4; 
 	color: var(--my-black);
@@ -72,25 +72,26 @@ body {
  }
 
  h1, h2 {
-    font-family: 'pp_editorial_oldregular', Georgia, sans-serif;
+    font-family: 'pp_editorial_oldregular', Georgia, serif;
     margin: .5em 0;
 }
 
 h3 {
-    font-family: 'pp_editorial_olditalic', Georgia, sans-serif;
+    font-family: 'pp_editorial_olditalic', Georgia, serif;
     margin: .5em 0;
 }
 
 h4, h5, h6, dt {
-    font-family: 'pp_editorial_ultrabold', Georgia, sans-serif;
+    font-family: 'Karla', sans-serif; 
+    /* QUESTION: what would be the best way to use google font? */
     margin: .5em 0;
 }
 
- h1 {
+h1 {
     font-size: 2.25em;    /* 36px / 16px = 2.25em */
     line-height: 1.1;
  }
- h2 {
+h2 {
     font-size: 1.5em;    /* 24px / 16px = 1.5em */
     line-height: 1.2;
 }
@@ -110,7 +111,8 @@ h5 {
     line-height: 1.5;
 }
 
-h6 {
+h6, 
+dt {
     font-size: 0.875em;    /* 14px / 16px = 1em */
     line-height: 1.4;
 } 
@@ -122,10 +124,14 @@ p {
     max-width: 38em;
 }
 
+dd {
+    font-size: 75%;   /* 12px */
+    max-width: 38em;
+}
+
 /* LINKS */
 a {
     text-decoration: none;
-    /* position: relative; */
 }
 
 a:hover {
@@ -350,8 +356,10 @@ body.demo::before {
     text-decoration: none;
 }
 
-/* SITE NAV */
+/* SITE NAV */   
+/* QUESTION: (1) Footer is workign but header is not. (2) link is also not working. */
 .site-nav ul {
+    text-align: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -361,7 +369,7 @@ body.demo::before {
 }
 
 .site-nav a {
-    display: block;
+    /* display: block; */
     padding: 1em;
 }
 
@@ -405,7 +413,6 @@ section {
 }
 
 /* HERO */
-
 .hero.home {
     width: 100%;
     height: 100vh;
@@ -468,9 +475,18 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* QUESTION: How can I make it big?? Transform:scale does not work */
 }
 
 /* SUB PAGES ---------- */ 
+.hero.sub {
+/* QUESTION: What is the better way to resolve the absolute position? */
+}
+
+.one-half.textblock {
+    margin-bottom: 1em;
+}
+
 
 /* CUSTOM CSS FOR ABOUT PAGE */
 .characters20 {
