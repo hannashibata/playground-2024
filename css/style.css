@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* BASE CSS (Initial Setup)
 ---------------------------------
-    #GLOBAL RESET
+    #GLOBAL RESET (line 31)
     #CONTENT
-        #TYPOGRAPHY
+        #TYPOGRAPHY (line 48)
             #BODY
             #HEADINGS
             #PARAGRAPHS
@@ -81,12 +81,15 @@ h3 {
     margin: .5em 0;
 }
 
-h4, h5, h6, dt {
+h4, h5, h6 {
     font-family: 'Karla', sans-serif; 
     /* QUESTION: what would be the best way to use google font? */
     margin: .5em 0;
 }
 
+dt {
+    font-family: 'ppeditorialold-ultrabold', Gerogia, serif;
+}
 h1 {
     font-size: 2.25em;    /* 36px / 16px = 2.25em */
     line-height: 1.1;
@@ -111,8 +114,7 @@ h5 {
     line-height: 1.5;
 }
 
-h6, 
-dt {
+h6 {
     font-size: 0.875em;    /* 14px / 16px = 1em */
     line-height: 1.4;
 } 
@@ -124,6 +126,7 @@ p {
     max-width: 38em;
 }
 
+dt,
 dd {
     font-size: 75%;   /* 12px */
     max-width: 38em;
@@ -132,6 +135,7 @@ dd {
 /* LINKS */
 a {
     text-decoration: none;
+    color: var(--my-black);
 }
 
 a:hover {
@@ -338,7 +342,7 @@ body.demo::before {
 
 .site-header a:hover,
 .site-footer a:hover {
-    color: var(--my-black20);
+    color: var(--my-green);
     text-decoration: none;
 }
 
@@ -357,7 +361,7 @@ body.demo::before {
 }
 
 /* SITE NAV */   
-/* QUESTION: (1) Footer is workign but header is not. (2) link is also not working. */
+/* QUESTION: Footer layout is working but header is not */
 .site-nav ul {
     text-align: center;
     margin: 0;
@@ -414,6 +418,7 @@ section {
 
 /* HERO */
 .hero.home {
+    z-index: -1; 
     width: 100%;
     height: 100vh;
     position: relative;
@@ -428,7 +433,6 @@ section {
 }
 
 .slideshow {
-    z-index: -1; 
     filter: brightness(.9);
     margin: 0;
     padding: 0;
@@ -437,7 +441,7 @@ section {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    animation: slideAnimation 12s infinite;
+    animation: slideAnimation 8s infinite;
 }
 
 .slideshow:nth-child(1) {
@@ -446,23 +450,23 @@ section {
 
 .slideshow:nth-child(2) {
     background-image: url('../img/slideshow-02.jpg');
-    animation-delay: 3s;
+    animation-delay: 2s;
 }
 
 .slideshow:nth-child(3) {
     background-image: url('../img/slideshow-03.jpg');
-    animation-delay: 6s;
+    animation-delay: 4s;
 }
 
 .slideshow:nth-child(4) {
     background-image: url('../img/slideshow-04.jpg');
-    animation-delay: 9s;
+    animation-delay: 6s;
 }
 
 @keyframes slideAnimation {
     0% {opacity: 0;}
-    33.333% {opacity: 1;}
-    66.6666% {opacity: 1;}
+    25% {opacity: 1;}
+    75% {opacity: 1;}
     100% {opacity: 0;}
 }
 
@@ -484,16 +488,34 @@ section {
 }
 
 .one-half.textblock {
+    margin: 1em 0 1em 0;
+}
+
+/* CUSTOM CSS FOR ABOUT PAGE */
+.headline {
+    max-width: 16ch;
     margin-bottom: 1em;
 }
 
-
-/* CUSTOM CSS FOR ABOUT PAGE */
-.characters20 {
-    max-width: 16ch;
+.subhead {
+    max-width: 28ch;
+    margin-bottom: 1em;
 }
+
+.eyebrow {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: var(--my-black20);
+}
+
+.profile {
+    margin: 0;
+    padding: 0;
+}
+
 .column.one-half.about {
     text-align: left;
+    margin: 1em 0;
 }
 
 

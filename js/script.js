@@ -13,4 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     })
 
+    //TOGGLE NAV MOBILE MENU SCROLL LINKS FOR SMALL SCREENS
+    var stickynavlinks = document.querySelectorAll(".sticky nav a");
+    var j;
+    for (j = 0; j < stickynavlinks.length; j++) {
+        stickynavlinks[j].onclick = function() {
+            menunav.setAttribute('data-navstate', 'closed');
+        };
+    };
 });
