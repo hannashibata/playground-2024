@@ -432,7 +432,7 @@ section {
     margin-bottom: 0;
 }
 
-.slideshow {
+.hero-lookbook {
     filter: brightness(.9);
     margin: 0;
     padding: 0;
@@ -441,33 +441,37 @@ section {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    animation: slideAnimation 8s infinite;
+    animation: change-img-anim 8s infinite;
+    /* using Yochan's code https://codepen.io/yochans/pen/MWEjeLE */
 }
 
-.slideshow:nth-child(1) {
+.hero-lookbook:nth-child(1) {
     background-image: url('../img/slideshow-01.jpg');
+    animation-delay: 0s;
 }
 
-.slideshow:nth-child(2) {
+.hero-lookbook:nth-child(2) {
     background-image: url('../img/slideshow-02.jpg');
     animation-delay: 2s;
 }
 
-.slideshow:nth-child(3) {
+.hero-lookbook:nth-child(3) {
     background-image: url('../img/slideshow-03.jpg');
     animation-delay: 4s;
 }
 
-.slideshow:nth-child(4) {
+.hero-lookbook:nth-child(4) {
     background-image: url('../img/slideshow-04.jpg');
     animation-delay: 6s;
 }
 
-@keyframes slideAnimation {
-    0% {opacity: 0;}
-    25% {opacity: 1;}
-    75% {opacity: 1;}
-    100% {opacity: 0;}
+/* QUESTION: The transition is funky: how can I make it look more smooth? */
+@keyframes change-img-anim {
+	0%{ opacity: 0;}
+	20%{ opacity: 1;}
+	30%{ opacity: 1;}
+	35%{ opacity: 1;}
+	100%{ opacity: 0;}
 }
 
 .hero-title {
