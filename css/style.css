@@ -465,7 +465,7 @@ section {
     animation-delay: 6s;
 }
 
-/* QUESTION: The transition is funky: how can I make it look more smooth? */
+/* QUESTION: The transition is funky: how can I make it look more smooth? And the first image doesn't show up; I'm so confused.*/
 @keyframes change-img-anim {
 	0%{ opacity: 0;}
 	20%{ opacity: 1;}
@@ -483,12 +483,13 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* QUESTION: How can I make it big?? Transform:scale does not work */
+    /* QUESTION: How can I make it big?? Transform:scale does not work. should I adjust the tyupography setting above? */
 }
 
 /* SUB PAGES ---------- */ 
 .hero.sub {
-/* QUESTION: What is the better way to resolve the absolute position? */
+/* QUESTION: What is the better way to resolve the absolute position?
+I'm now adding margin. absolute を　inherit　してるので header を邪魔している*/
 }
 
 .one-half.textblock {
@@ -512,7 +513,7 @@ section {
     color: var(--my-black20);
 }
 
-.profile {
+.history {
     margin: 0;
     padding: 0;
 }
