@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* BASE CSS (Initial Setup)
+/* PLAYBROUD-2024 CSS (Initial Setup)
 ---------------------------------
     #GLOBAL RESET (line 31)
     #CONTENT
@@ -401,7 +401,7 @@ section {
 
 @media (min-width: 768px) {
     .thumbgrid li {
-        width: 24.5%;
+        width: 32.75%;
     }
 }
 
