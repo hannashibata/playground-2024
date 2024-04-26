@@ -234,43 +234,6 @@ img {
     }
 }
 
-/* FOR DEMO PURPOSES ONLY*/
-body.demo {
-    padding-top: 2em;
-}
-
-body.demo::before {
-    content: "Small (Mobile) Screen Less than 768px";
-    background-color: #933;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    text-align: center;
-    color: white;
-    padding: .5em;
-}
-
-@media ( min-width: 768px) {
-    body.demo::before {
-        background-color: #bcb83d;
-        content: "Midsize (Tablet) Screen 768px – 1050px";
-    }
-}
-
-@media ( min-width: 1050px) {
-    body.demo::before {
-        background-color: #669933;
-        content: "Large (Notebook) Screen 1050px – 1250px";
-    }
-}
-
-@media ( min-width: 1250px) {
-    body.demo::before {
-        background-color: #0099cc;
-        content: "Extra Large (Desktop) Screen 1250px +"
-    }
-}
-
 /* SEMANTIC GRID SYSTEM */
 .row > .column {
     margin-bottom: 4%;
@@ -317,7 +280,7 @@ body.demo::before {
 @media (min-width: 768px) {
     .site-header .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
@@ -325,13 +288,9 @@ body.demo::before {
 /* SITE HEADER & FOOTER */
 .site-header,
 .site-footer {
-    text-align: center;
     padding: 1em 0 1em 0;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center; */
 }
 
 /* SITE ID */
@@ -350,6 +309,7 @@ body.demo::before {
     background-color: transparent;
     position: absolute;
     width: 100%;
+    z-index: 100;
 }
 
 /* ID AREA */
@@ -363,9 +323,9 @@ body.demo::before {
 /* SITE NAV */   
 /* QUESTION: Footer layout is working but header is not */
 .site-nav ul {
-    text-align: center;
     margin: 0;
     padding: 0;
+    /* text-align: center; */
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -373,7 +333,6 @@ body.demo::before {
 }
 
 .site-nav a {
-    /* display: block; */
     padding: 1em;
 }
 
@@ -582,6 +541,12 @@ I'm now adding margin. absolute を　inherit　してるので header を邪魔
 }
 
 /* FOR DEV PURPOSES ONLY */
+/*  Small (Mobile) Screen => ( max-width: 768px )
+    Midsize (Tablet) Screen =>  ( min-width: 768px )
+    Large (Notebook) Screen => ( min-width: 1050px ) 
+    Extra Large (Desktop) Screen 1250px + => ( min-width: 1250px)
+*/
+
 /* body * {
     background-color: rgba(0,0,0,.05);
     border: 1px solid rgba(0,0,0,.1);
