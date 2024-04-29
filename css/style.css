@@ -23,7 +23,7 @@
                 #site-id (IDENTIFIER, LOGO)
             #FOOTER
             #SECTIONS
-            #SUB PAGES
+            #SUB PAGES / CUSTOM CSS FOR EACH PAGE
         #SITE NAVIGATION
             #TOGGLE-NAV (Default for Small Screens)
 ---------------------------------*/
@@ -234,46 +234,34 @@ img {
     }
 }
 
-/* SEMANTIC GRID SYSTEM */
-.row > .column {
-    margin-bottom: 4%;
-}
-
-@media ( min-width: 768px) {
-
+/* GRID SYSTEM */
+.row {
+    --gridgap: 4%;
+    --gridgap-half: calc( var(--gridgap) / 2);
+    padding-bottom: var(--gridgap);
+  }
+  
+  @media (min-width: 768px) {
     .row {
-        display: flex;
-        justify-content: space-between;
-        margin-left: -2%;
-        margin-right: -2%;
-        margin-bottom: 1em;
+      display: flex;
+      justify-content: space-between;
+      gap: var(--gridgap);
+      padding: 0;
+      margin: var(--gridgap) 0;
     }
-    .row > .column {
-        flex-grow: 1;
-        margin-left: 2%;
-        margin-right: 2%;
+  
+    .row > * {
+      flex-grow: 1;
     }
-
-    .row > .column.one-half {
-        max-width: 46%;
+  
+    .row.swap {
+      flex-direction: row-reverse;
     }
-
-    .row > .column.one-third {
-        max-width: 29.3333%;
-    }
-
-    .row > .column.two-thirds {
-        max-width: 62.6666%;
-    }
-
-    .row > .column.one-fourth {
-        max-width: 21%;
-    }
-
-    .row > .column.centered {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  
+    .row .one-half { max-width: calc( 50% - var(--gridgap-half) ); }
+    .row .one-third { max-width: calc( 33.3333% - var(--gridgap-half) ); }
+    .row .two-thirds { max-width: calc( 66.6666% - var(--gridgap-half) ); }
+    
 }
 
 /* PLACE SITE-ID LEFT AND NAV RIGHT ON LARGER SCREENS */
@@ -446,13 +434,21 @@ section {
 }
 
 /* SUB PAGES ---------- */ 
-.hero.sub {
-/* QUESTION: What is the better way to resolve the absolute position?
-I'm now adding margin. absolute を　inherit　してるので header を邪魔している*/
-}
-
 .one-half.textblock {
     margin: 1em 0 1em 0;
+}
+
+.hero-workpage {
+/* margin-top: 2.5em; */
+/* padding-top: 3em; */
+}
+
+.project-title {
+    text-transform: uppercase;
+}
+
+.with-images {
+    
 }
 
 /* CUSTOM CSS FOR ABOUT PAGE */
