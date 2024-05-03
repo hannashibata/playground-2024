@@ -293,7 +293,8 @@ img {
     text-decoration: none;
 }
 
-.site-header {
+.site-header,
+.site-footer {
     background-color: transparent;
     position: absolute;
     width: 100%;
@@ -311,9 +312,9 @@ img {
 /* SITE NAV */   
 /* QUESTION: Footer layout is working but header is not */
 .site-nav ul {
+    width: 100%;
     margin: 0;
     padding: 0;
-    /* text-align: center; */
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -321,7 +322,7 @@ img {
 }
 
 .site-nav a {
-    padding: 1em;
+    padding: 1em;   
 }
 
 .site-nav .menu-button {
