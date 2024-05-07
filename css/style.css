@@ -267,7 +267,7 @@ img {
 /* PLACE SITE-ID LEFT AND NAV RIGHT ON LARGER SCREENS */
 @media (min-width: 768px) {
     .site-header .container {
-        display: flex;
+        /* by default, this is display: box; and since this is inside container, I just need to tell it the following: */
         justify-content: space-around;
     }
 }
@@ -381,7 +381,7 @@ section {
 }
 
 .hero-lookbook {
-    filter: brightness(.9);
+    /* filter: brightness(.9); */
     margin: 0;
     padding: 0;
     position: absolute;
@@ -389,7 +389,7 @@ section {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    animation: change-img-anim 8s infinite;
+    animation: change-img-anim 5s infinite;
     /* using Yochan's code https://codepen.io/yochans/pen/MWEjeLE */
 }
 
@@ -400,25 +400,25 @@ section {
 
 .hero-lookbook:nth-child(2) {
     background-image: url('../img/slideshow-02.jpg');
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .hero-lookbook:nth-child(3) {
     background-image: url('../img/slideshow-03.jpg');
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 
 .hero-lookbook:nth-child(4) {
     background-image: url('../img/slideshow-04.jpg');
-    animation-delay: 6s;
+    animation-delay: 3s;
 }
 
 /* QUESTION: The transition is funky: how can I make it look more smooth? And the first image doesn't show up; I'm so confused.*/
 @keyframes change-img-anim {
 	0%{ opacity: 0;}
-	20%{ opacity: 1;}
-	30%{ opacity: 1;}
-	35%{ opacity: 1;}
+	25%{ opacity: 1;}
+	50%{ opacity: 1;}
+	75%{ opacity: 0;}
 	100%{ opacity: 0;}
 }
 
@@ -431,7 +431,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* QUESTION: How can I make it big?? Transform:scale does not work. should I adjust the tyupography setting above? */
+    /* font-size: 2em; */
 }
 
 /* SUB PAGES ---------- */ 
