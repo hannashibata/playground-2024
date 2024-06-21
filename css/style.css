@@ -36,8 +36,9 @@ body { margin: 0;}
 /* GLOBAL COLORS */
 html {
     --my-white: rgb(225 225 225  /1);
-    --my-magenta: rgb(252, 15, 192, 1);
+    --my-magenta: rgb(252 15 192 /1);
     --my-green: rgb(0 255 0 /1);
+    --my-green80: rgba(128 255 128 /.8);
     --my-black: rgb(10 10 10 /.8);
     --my-black20: rgb(10 10 10 /.2);
 }
@@ -353,16 +354,40 @@ section {
     }
 }
 
+.thumbgrid-card {
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+    filter: brightness(.98);
+    overflow: hidden;
+    /* box-shadow: 0 4px 8px 0 var(--my-black20); */
+    transition: 0.3s;
+    /* margin: 30px auto;
+    width: 300px;
+    height: 300px; */
+    object-fit: cover;
+    cursor: pointer;
+    position: relative;
+}
+
 .thumbgrid a img {
-    filter: brightness(1.05);
+    /* border: 1px solid red; */
+    display: grid;
+    filter: brightness(.9);
     transition: all ease-in-out 0.2s;
     border: 1px solid rgb(255, 255, 255 /0);
+    /* max-height: 100%; */
+    width: 100%;
 }
 
 .thumbgrid a:hover img {
-    filter: brightness(1);
+    filter: brightness(1.05);
     border: 1px solid rgb(0, 0, 0 /.3);
+    transform: scale(1.05, 1.05);
 }
+
+/* .thumbgrid-card:hover {
+    box-shadow: 0 6px 12px 0 var(--my-green80);
+} */
 
 /* HERO */
 .hero.home {
