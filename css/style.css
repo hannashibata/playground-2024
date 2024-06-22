@@ -41,6 +41,7 @@ html {
     --my-green80: rgba(128 255 128 /.8);
     --my-black: rgb(10 10 10 /.8);
     --my-black20: rgb(10 10 10 /.2);
+    --my-black60: rgb(10 10 10 /.6);
 }
 body { background-color: var(--my-white); }
 /* a { color: rgb(0 0 0 /0.8); } */
@@ -345,7 +346,7 @@ section {
 .thumbgrid li {
     list-style: none;
     /* width: 49.5%; */
-    padding-bottom: 0.4%;
+    padding-bottom: 0.8%;
 }
 
 @media (min-width: 768px) {
@@ -357,7 +358,7 @@ section {
 .thumbgrid-card {
     /* border: 1px solid blue; */
     border-radius: 5px;
-    filter: brightness(.98);
+    filter: brightness(.9);
     overflow: hidden;
     /* box-shadow: 0 4px 8px 0 var(--my-black20); */
     transition: 0.3s;
@@ -372,11 +373,15 @@ section {
 .thumbgrid a img {
     /* border: 1px solid red; */
     display: grid;
-    filter: brightness(.9);
     transition: all ease-in-out 0.2s;
     border: 1px solid rgb(255, 255, 255 /0);
     /* max-height: 100%; */
     width: 100%;
+    /* filter: brightness(.9); */
+}
+
+.thumbgrid-card:hover {
+    box-shadow: 0 0 24px 0 var(--my-black60);
 }
 
 .thumbgrid a:hover img {
@@ -386,7 +391,7 @@ section {
 }
 
 /* .thumbgrid-card:hover {
-    box-shadow: 0 6px 12px 0 var(--my-green80);
+    box-shadow: inset 0 6px 12px 0 var(--my-green80);
 } */
 
 /* HERO */
