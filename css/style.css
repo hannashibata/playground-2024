@@ -271,8 +271,14 @@ img {
     
 }
 
-.one-half.textblock {
-    margin: 1em 0 1em 0;
+.textblock {
+    margin: 0 0 3em 0;
+}
+
+.textblock a:hover {
+    /* why is the link not changing color */
+    color: var(--my-green);
+    text-decoration: none;
 }
 
 /* PLACE SITE-ID LEFT AND NAV RIGHT ON LARGER SCREENS */
@@ -287,8 +293,6 @@ img {
 /* SITE HEADER & FOOTER */
 .site-header {
     padding: 1em 0 1em 0;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
 }
 
 .site-footer {
@@ -341,7 +345,12 @@ img {
     text-decoration: none;
 }
 
-/* SITE NAV */   
+/* SITE NAV */ 
+.site-nav {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
 .site-nav ul {
     width: 100%;
     margin: 0;
@@ -473,8 +482,8 @@ radial-gradient(at 6% 44%, hsla(283,92%,62%,1) 0px, transparent 50%);
     align-items: center;
 }
 
-.hero-lookbook {
-    /* filter: brightness(.9); */
+/* .hero-lookbook {
+    filter: brightness(.9);
     margin: 0;
     padding: 0;
     position: absolute;
@@ -482,8 +491,8 @@ radial-gradient(at 6% 44%, hsla(283,92%,62%,1) 0px, transparent 50%);
     height: 105vh;
     background-size: cover;
     background-position: center;
-    /* animation: change-img-anim 5s infinite; */ /* using Yochan's code https://codepen.io/yochans/pen/MWEjeLE */
-}
+    animation: change-img-anim 5s infinite; /* using Yochan's code https://codepen.io/yochans/pen/MWEjeLE 
+} */
 
 /* .hero-lookbook:nth-child(1) {
     background-image: url('../img/slideshow-01.jpg');
@@ -516,6 +525,7 @@ radial-gradient(at 6% 44%, hsla(283,92%,62%,1) 0px, transparent 50%);
 
 .hero-title {
     color: var(--my-white);
+    /* QUESTION: the max-height should be for parent */
     max-width: 100%;
     max-height: 125vh;
     margin-left: auto;
@@ -537,11 +547,13 @@ radial-gradient(at 6% 44%, hsla(283,92%,62%,1) 0px, transparent 50%);
 }
 
 .title-home {
-    font-size: 5em;
-    letter-spacing: 4px;
+    font-size: 6em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .p-home {
+    font-size: 1em;
     font-weight: 200;
     margin-bottom: 2em;
     margin-left: auto;
@@ -581,11 +593,11 @@ radial-gradient(at 6% 44%, hsla(283,92%,62%,1) 0px, transparent 50%);
 /* CUSTOM CSS FOR TYPOGRAPHY AND ABOUT SECTION */
 .home.about {
     /* border: 1px solid blue; */
-    background-color: var(--my-black);
+    /* background-color: var(--my-black); */
     color: var(--my-white);
-    height: 125vh;
+    min-height: 125vh;
     width: 100vw;
-    padding-top: 6em;
+    padding: 3em 0 18em 0;
     margin-bottom: -60px;
     margin-top: -100px;
     border-top-left-radius: 50px;
@@ -594,6 +606,12 @@ radial-gradient(at 6% 44%, hsla(283,92%,62%,1) 0px, transparent 50%);
 
 .home.about a {
     color: var(--my-white);
+}
+
+/* .column.one-half.about */
+.column.two-thirds.about {
+    text-align: left;
+    margin: 1em 0;
 }
 
 .headline {
@@ -611,7 +629,7 @@ radial-gradient(at 6% 44%, hsla(283,92%,62%,1) 0px, transparent 50%);
 .eyebrow {
     text-transform: uppercase;
     margin-bottom: 0;
-    color: var(--my-black20);
+    color: var(--my-black60);
 }
 
 .history {
@@ -619,9 +637,9 @@ radial-gradient(at 6% 44%, hsla(283,92%,62%,1) 0px, transparent 50%);
     padding: 0;
 }
 
-.column.one-half.about {
-    text-align: left;
-    margin: 1em 0;
+.p-about {
+    font-size: 1.5em;
+    letter-spacing: -1px; 
 }
 
 
