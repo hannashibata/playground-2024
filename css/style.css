@@ -366,18 +366,19 @@ img {
 }
 
 /* SECTIONS */
-section {
+/* section {
     padding: 3em 0;
-}
+} */
 
-/* HERO */
 .hero-home,
-.hero-intermediate {
-    width: 100%;
-    height: 105vh;
+.hero-intermediate,
+.about-section {
+    width: 100vw;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 12em 0 12em 0;
     /* z-index: -1;  */
     /* position: relative;
     left: 50%;
@@ -388,6 +389,7 @@ section {
     background-repeat: no-repeat; */
 }
 
+/* HOME */
 .solid-view {
     background-color:hsla(0,100%,50%,1);
 background-image:
@@ -474,17 +476,12 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     font-style: italic;
 }
 
-.works-index {
-    height: 125vh;
-    width: 100vw;
-    padding: 6em 0 6em 0;
-    /* border: 1px solid blue; */
-    /* background-color: var(--my-white); */
-    /* margin-bottom: 6em; */
-    /* margin-top: -40px; */
-    /* border-top-left-radius: 50px;
-    border-top-right-radius: 50px; */
-    /* border-radius: 50px; */
+@media (min-width: 768px) {
+    .works-index {
+        height: 125vh;
+        width: 100vw;
+        padding: 6em 0 6em 0;
+    }
 }
 
 /* #works {
@@ -505,18 +502,20 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     list-style: none;
     /* width: 49.5%; */
     padding-bottom: 0.8%;
+    margin-bottom: 2.5%;
 }
 
 @media (min-width: 768px) {
     .thumbgrid li {
         /* width: 32.75%; */
-        width: 49.5%;
+        /* width: 49.5%; */
+        width: 45%;
     }
 }
 
 .thumbgrid-card {
     /* border: 1px solid blue; */
-    border-radius: 5px;
+    border-radius: 5%;
     filter: brightness(.9);
     overflow: hidden;
     /* box-shadow: 0 4px 8px 0 var(--my-black20); */
@@ -550,23 +549,20 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
 }
 
 /* CUSTOM CSS FOR ABOUT SECTION */
-.about-section {
-    /* border: 1px solid blue; */
-    /* background-color: var(--my-black); */
-    color: var(--my-black);
-    min-height: 125vh;
-    width: 100vw;
-    padding: 6em 0 12em 0;
-    /* margin-bottom: -60px; */
-    /* margin-top: -100px; */
-    /* border-top-left-radius: 50px;
-    border-top-right-radius: 50px; */
+.about {
+    animation: fadeandscaleIn 0.4s ease-out forwards;
 }
 
-.about {
-    animation-name: fadein-up;
-    animation-duration: 2s;
-}
+@keyframes fadeandscaleIn {
+    0% {
+      transform: scale(0.97) translateY(-5px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
 
 .about a {
     color: var(--my-black);
