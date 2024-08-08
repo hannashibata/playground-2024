@@ -428,7 +428,6 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     margin: 3em 0 0 0;
     text-align: center;
     color: var(--my-white);
-    margin: auto;
     animation-name: fadein-up;
     animation-duration: 2s;
 }
@@ -606,10 +605,33 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
 }
 
 /* CUSTOM CSS FOR SUB PAGES */
+.hero.sub {
+
+}
+
+.hero-title.sub {
+    padding: 0;
+    margin: 12em 0 12em 0;
+    text-align: center;
+    color: var(--my-white);
+    animation-name: fadein-up;
+    animation-duration: 2s;
+}
+
 .project-title {
     text-transform: uppercase;
 }
 
+.within-p {
+
+    font-size: 0.75em;   /* 12px */
+    /* QUESTION: font weight seems not working, why?? */
+    font-weight: 200;
+    margin: .5em 0;
+    padding: 0;
+    max-width: 38em;
+
+}
 
 /* TOGGLE NAV ---------- */ 
 @media ( max-width: 767px) {
@@ -675,8 +697,8 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     Extra Large (Desktop) Screen 1250px + => ( min-width: 1250px)
 */
 
-/* body * {
+body * {
     background-color: rgba(0,0,0,.05);
     border: 1px solid rgba(0,0,0,.1);
     color: rgba(0,0,0,.5);
-} */
+}
