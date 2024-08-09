@@ -400,9 +400,13 @@ radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
 radial-gradient(at 80% 42%, hsla(9,95%,17%,1) 0px, transparent 50%),
 radial-gradient(at 45% 80%, hsla(22,100%,77%,1) 0px, transparent 50%),
 radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
-    background-attachment: fixed;     /* this might not work on mobile */
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
+}
+
+.solid-view,
+.solid-view-sub {
+    background-attachment: fixed;     /* this might not work on mobile */
 }
 
 @keyframes gradient {
@@ -444,7 +448,8 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     margin: 1em 0 0.5em 0;
 }
 
-.title-home {
+.title-home,
+.title-sub {
     font-size: 6em;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -605,15 +610,15 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
 }
 
 /* CUSTOM CSS FOR SUB PAGES */
-.hero.sub {
-
-}
-
-.hero-title.sub {
+.title-subpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
-    margin: 12em 0 12em 0;
+    margin: 12em 0 0 0;
+    height: 30vh;
     text-align: center;
-    color: var(--my-white);
+    color: var(--my-black);
     animation-name: fadein-up;
     animation-duration: 2s;
 }
@@ -622,8 +627,9 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     text-transform: uppercase;
 }
 
-.within-p {
 
+
+.within-p {
     font-size: 0.75em;   /* 12px */
     /* QUESTION: font weight seems not working, why?? */
     font-weight: 200;
@@ -631,6 +637,17 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     padding: 0;
     max-width: 38em;
 
+}
+.solid-view-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: auto;
+    background-size: cover;
+}
+.solid-view-criminal {
+    background-image: url(../work-criminalspinoff/img/criminal_books-a.jpg);
 }
 
 /* TOGGLE NAV ---------- */ 
@@ -697,8 +714,8 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     Extra Large (Desktop) Screen 1250px + => ( min-width: 1250px)
 */
 
-body * {
+/* body * {
     background-color: rgba(0,0,0,.05);
     border: 1px solid rgba(0,0,0,.1);
     color: rgba(0,0,0,.5);
-}
+} */
