@@ -121,7 +121,8 @@ h6 {
     line-height: 1.4;
 } 
 
-p {
+p,
+.list-paragraph {
     font-size: 0.75em;   /* 12px */
     /* QUESTION: font weight seems not working, why?? */
     font-weight: 200;
