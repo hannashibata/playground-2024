@@ -651,6 +651,10 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     background-image: url(../work-criminalspinoff/img/criminal_books-a.jpg);
 }
 
+.solid-view-hspl {
+    background-image: url(../work-hspl/img/hspl-mock-hero-1600x900.jpg);
+}
+
 /* TOGGLE NAV ---------- */ 
 @media ( max-width: 767px) {
     .toggle-nav .site-id {
