@@ -124,7 +124,7 @@ h6 {
 p,
 .list-paragraph {
     font-size: 0.75em;   /* 12px */
-    /* QUESTION: font weight seems not working, why?? */
+    /* QUESTION: font weight seems not working, why?? and why is the list outside the margin??? */
     font-weight: 200;
     margin: 1em 0;
     padding: 0;
@@ -145,6 +145,11 @@ a {
 
 a:hover {
     color: var(--my-green);
+}
+
+/* INDENTATION */
+.list-paragraph {
+
 }
 
 /* a::before {

@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hs-sitebase | Single Page</title>
-    <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects.">
+    <title>Playbround-2024 | HSPL</title>
+    <meta name="description" content="Redesigning Hawaii State Public Library Website.">
 
     <!-- FOR MOBILE / SMALL SCREENS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- TYPEFACE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla">
+    <link rel="stylesheet" href="../fonts/stylesheet.css">
 
 </head>
 
 <body id="top">
-    <header class="site-header toggle-nav sticky" data-navstate="closed">
+    <header class="site-header toggle-nav" data-navstate="closed">
         <div class="container">
-            <div class="site-id">
-                <h1><a class="scroll" href="#top">Base Site Singlepage</a></h1>
-            </div>
             <nav class="site-nav">
                 <button class="menu-button navicon">Menu</button>
                 <ul>
-                    <li><a class="scroll" href="#top">Home</a></li>
-                    <li><a class="scroll" href="#about">About</a></li>
-                    <li><a class="scroll" href="#contact">Contact</a></li>
+                    <li><a href="../index.html#works" class="scroll">Works</a></li>
+                    <li><h1 class="site-id"><a href="../index.html"><img src="../img/favicon-hanna-221px.png" alt="Hanna Shibata's icon linked to home" width="36px" height="36px"></a></h1></li>
+                    <li><a href="../index.html#about">About</a></li>
                 </ul>
             </nav>
 
@@ -32,17 +33,17 @@
     </header>
 
     <main class="site-main">
-        <section class="hero">
+        <section class="hero sub">
 
-            <div class="container">
-
-                <h1>This is the Hero&nbsp;Section.</h1>
-                <p>This is the hero section on the top of a single page website.</p>
-                <a class="button scroll" href="#about">Learn More About Us</a>
-                <a class="button alt scroll" href="#contact">Get in Touch</a>
-
-            
+            <div class="hero-title title-subpage">
+                <!-- <h6 class="eyebrow-hero">digital playground, 2024 issue</h6> -->
+                <h2 class="title-sub">Website Renewal for<br>150-year-old&nbsp;library</h2>
             </div>
+            
+            <div class="solid-view-sub solid-view-hspl">
+                <!-- QUESTION: how can I add alt text -->
+            </div>
+            
             <!-- END CONTAINER -->
         </section>
 
@@ -51,121 +52,150 @@
 
                 <div class="row">
                     <div class="column one-third">
-                        <img src="img/placeholder-1x1.gif" alt="square image for placeholder" width="1500" height="1500">
-                        <h2>Heading 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo praesentium iste itaque harum, minima, odit consequatur velit dolorum assumenda molestias, hic enim laudantium sit aperiam.</p>
-                        <div class="button">Button</div>
+                        <h2 class="project-title">Redesigning Hawai&#699;i State Public Library&nbsp;website </h2>
+                        <dl>
+                            <dt>Scope of Work</dt>
+                            <dd>Visual Design / UXUI Design / High-fidelity&nbsp;Wireframe</dd>
+                            <dt>Tools</dt>
+                            <dd>Adobe Photoshop, Illustrator</dd>
+                            <dd>Figma</dd>
+                            <dt>Year</dt>
+                            <dd>2024</dd>
+                            <dt>Other</dt>
+                            <dd><a href="https://www.figma.com/proto/urUdl6yzn0Dfk4rkHqbXEL/ART229_PJ02_Hawaii-Library-prototype?page-id=71%3A3040&node-id=71-3041&viewport=607%2C387%2C0.03&t=YqSexTcMeT3d2oOg-1&scaling=scale-down-width&starting-point-node-id=71%3A3041&content-scaling=fixed"><i class="fa-solid fa-link"></i> View Figma Prototype</a></dd>
+                        </dl>
                     </div>
 
                     <div class="column one-third">
-                        <img src="img/placeholder-1x1.gif" alt="square image for placeholder" width="1500" height="1500">
-                        <h2>Heading 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo praesentium iste itaque harum, minima, odit consequatur velit dolorum assumenda molestias, hic enim laudantium sit aperiam.</p>
-                        <div class="button">Button</div>
+                        <h5 class="project-title">Overview</h5>
+                        <p>This project aims to suggest redesigning the Hawai&#699;i State Public Library(HSPL) website and creating a more accessible&nbsp;platform.</p>
+                        <p>The history of HSPL is deeply intertwined with Hawai&#699;i&#8217;s broader educational and cultural development. The institution&#8217;s origins can be traced back to the late 19th century, with the establishment of the Honolulu Library and Reading Room in 1879. Hawai&#699;i&#8217;s royalty (King Kal&#257;kaua, Queen Kapi&#699;olani, Queen Emma, and Princess Bernice Pauahi Bishop) supported this both physically and financially.</p>
                     </div>
 
                     <div class="column one-third">
-                        <img src="img/placeholder-1x1.gif" alt="square image for placeholder" width="1500" height="1500">
-                        <h2>Heading 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo praesentium iste itaque harum, minima, odit consequatur velit dolorum assumenda molestias, hic enim laudantium sit aperiam.</p>
-                        <div class="button">Button</div>
-                    </div>                    
+                        <h5 class="project-title">Design Decision</h5>
+                        <p>IThe objective is to create a user-centered website that provides easy, intuitive access to various resources and services, including online catalogs, digital collections, event calendars, and library information.</p>
+                        <p>The website should support the library&#8217;s mission of promoting literacy, lifelong learning, and community engagement by offering a seamless digital platform that connects users with educational and informational materials regardless of location or device. Ultimately, the goal is to extend the library&#8217;s reach and impact by making its resources more accessible, engaging, and valuable to the diverse needs of its community.</p>
+                    </div>
+                  
                 </div>
           
             </div>
             <!-- END CONTAINER -->
+            
+            <div class="container">
+
+                <div class="row work-story">
+                    <div class="column one-half">
+                        <img src="../work-hspl/img/hspl-challenge-current.png" alt="The image of current website of HSPL." width="1600" height="900">
+
+                        <h5 class="project-title">Challenge—Defining the issue</h5>
+                        <p>The current website (as of June 2024) shown above has several issues that come from the same root—a complex information architecture. While the library serves the entire state, it is reasonable to contain a vast amount of information. The issue is that it lacks a user-centric&nbsp;perspective.</p>
+                        <p>
+                            <ul class="list-paragraph">
+                                <li>Lack of visual hierarchy complicates navigation.</li>
+                                <li>Graphics are not communicating (distracting). </li>
+                                <li>he library works as an educational + cultural + community hub, but the website does not promote these.</li>
+                        </ul></p>
+                    </div>
+        
+                    <div class="column one-half">
+                        <img src="../work-hspl/img/hspl-challenge-visualize.png" alt="The image showing the solution for current challenges HSPL has." width="1600" height="900">
+
+                        <h5 class="project-title">Challenge—Defining the solution</h5>
+                        <p>To solve these issues, I clarified the objectives of this&nbsp;project.</p>
+                        <p>
+                            <ul class="list-paragraph">
+                                <li>The website should be a user-centered platform that provides library service access.</li>
+                                <li>The website should be able to navigate easily and intuitively. </li>
+                                <li>The website should support the library&#8217;s mission of promoting literacy, lifelong learning, and community engagement.</li>
+                                <li>The website should feel open to everyone.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+    
+                <div class="row work-story">
+                    <div class="column two-thirds">
+                        <img src="../work-hspl/img/hspl-userslist.png" alt="A chart showing 10 categories of user demographics." width="800" height="450">
+
+                        <img src="../work-hspl/img/hspl-userproflile.png" alt="An image showing three user personas." width="800" height="450">
+                    </div>
+
+                    <div class="column one-third">
+                        <h5 class="project-title">User Demographic and User Personas</h5>
+                        <p>As the project aims to design a user-centric website, defining the users was also a big piece of the puzzle. I had conversations with potential library users and asked what they would be looking for in library service. Their first questions&nbsp;were:</p>
+                        <p>
+                            <ul class="list-paragraph">
+                                <li>Which branch can I go to?</li>
+                                <li>How can I get a library card?</li>
+                                <li>TWhat do they do?</li>
+                            </ul>
+                        </p>
+                        <p>
+                            After creating a list of user demographics, I created three profiles to help create a better platform accessible to users. This process helped me better understand the library service itself, how it should be supported, and what the end goal should look&nbsp;like.
+                        </p>
+                    </div>
+    
+                </div>
+
+                <div class="row swap work-story">
+                    <div class="column two-thirds">
+                        <img src="../work-hspl/img/hspl-sitemap-messy.jpg" alt="Stack of papers which are the current site map." width="800" height="450">
+
+                        <img src="../work-hspl/img/hspl-process.gif" alt="Animation showing the organization process of site map." width="800" height="450">
+
+                        <img src="../work-hspl/img/hspl-sitemap-solution.png" alt="A chart showing newly organized site map." width="800" height="450">
+                    </div>
+
+                    <div class="column one-third">
+                        <h5 class="project-title">A new site map, wireframing, and&nbsp;ideation</h5>
+                        <p>Based on the learnings above, I explored the information architecture and created a new site map based on user needs.</p>
+                    </div>
+    
+                </div>
+    
+                <div class="row work-story">
+                    <div class="column one-half">
+                        <img src="../work-hspl/img/hspl-figma-01.png" alt="A screenshot of low-fidelity wireframe using Figma, showing the userflow." width="2880" height="1800">
+                    </div>
+                    <div class="column one-half">
+                        <img src="../work-hspl/img/hspl-figma-02.png" alt="A screenshot of high-fidelity wireframe using Figma, showing the userflow." width="2880" height="1800">
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="container-img">
+                <img src="../work-hspl/img/hspl-final-outcome-v2.jpg" alt="Five webpages with new design layed on a yellow background." width="1600" height="1800">
+
+                <div class="work-story" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/958782230?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hawaii State Public Library Website Redesign Demo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></script>
+    
+            </div>
+
+            <!-- END CONTAINER -->
+
         </section>
     </main>
-
-    <section id="about">
-        <div class="container">
-           <h3 class="section-title">About Us</h3> 
-
-           <article>
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-
-            <h2 class="subhead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ultrices augue vitae purus sodales eleifend.</h2>
-
-            <h3 class="date">Date MM/DD/YYYY</h3>
-
-            <p>Sed faucibus egestas ultricies. Vivamus enim auctor hendrerit elit. Morbi facilisis tempus orci, sed placerat metus auctor non. Etiam non lacus erat, sit amet porttitor tellus. Curabitur pretium tincidunt tortor in vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi quam eros, bibendum ut pellentesque id, tristique eget lacus. Ut fermentum ligula vitae est luctus at iaculis nunc placerat.</p>
-
-            <h3>Vestibulum urna erat, viverra in dignissim quis, bibendum lobortis sapien. Integer porttitor magna ut orci aliquam sed suscipit eros adipiscing.</h3>
-
-            <p>Pellentesque feugiat mi id eros placerat sit amet hendrerit tortor ultricies. Praesent pellentesque lorem eget ligula egestas sit amet elementum lacus dignissim. Duis semper sapien id massa vehicula quis malesuada est molestie. Vestibulum ac nunc in metus egestas sodales. In dignissim luctus eros, non facilisis nisi vulputate vulputate. Cras bibendum venenatis ipsum, sed euismod quam rhoncus rhoncus. Nullam consectetur augue ac mi convallis nec tempor odio pellentesque.
-            </p>
-
-            <h3>Nam ut metus sit amet odio tincidunt tincidunt vitae a orci.</h3>
-
-            <p>Maecenas at urna sapien, in lobortis tellus. Morbi eget felis eget tellus dapibus pellentesque. Duis dapibus pulvinar ipsum eu dapibus. Suspendisse potenti. Etiam sollicitudin velit eget nisi vulputate eu semper quam semper. Sed vitae ipsum quam. Nunc sed purus nisl, sit amet luctus nisi. Ut enim massa, sagittis et commodo eget.</p>
-
-            <blockquote>Pellentesque rutrum, nunc sit amet adipiscing tempor, erat leo laoreet est, eu rhoncus risus elit quis lectus. Cras nulla tellus, sollicitudin quis commodo eget, commodo vel sapien.</blockquote>
-
-            <p>Auctor pretium elit. Nunc enim urna, accumsan sed ullamcorper eu, scelerisque gravida sapien. Phasellus tincidunt nunc elementum turpis ornare sit amet congue diam sodales. Sed interdum neque ut ipsum vestibulum euismod. Nulla nec purus ante. Praesent non diam et leo volutpat dictum in id erat. Donec elementum, leo ac blandit ornare, nunc nunc tincidunt mauris, sed ultricies lorem nibh quis lorem.</p>
-
-            <p>Morbi mauris mauris, aliquam eu sollicitudin id, sollicitudin sed nisl. Cras et nunc a leo pulvinar tincidunt. Suspendisse dignissim, sem sit amet consequat varius, eros enim ullamcorper eros, at tincidunt lacus dolor in turpis. Proin tempus ultricies mauris. Sed eu tortor nisi. Pellentesque non nisi justo, vel suscipit orci. Integer dolor metus, scelerisque aliquet sollicitudin sit amet, posuere at mauris. Nunc sem tellus, consequat at pulvinar quis, fringilla vel libero. Integer faucibus fermentum eros.</p>
-
-            <h3>Proin non ipsum ligula, ornare semper purus.</h3>
-
-            <p>Morbi tincidunt ligula sit amet nulla venenatis sit amet tristique nisl pretium. Nunc facilisis, orci et gravida blandit, lectus augue viverra augue, non tempus ligula leo nec arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eu elit quis sem posuere sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris congue dolor a magna accumsan eu pharetra mi porta. Cras eget interdum velit.</p>
-
-            <p>Aenean id nulla in dui iaculis adipiscing. Quisque commodo odio ut lacus auctor pellentesque. Pellentesque egestas pellentesque lorem sed imperdiet. Etiam porta egestas lectus eget interdum. Pellentesque purus neque, elementum non lobortis quis, vulputate ac metus. Etiam et purus a justo accumsan consequat eu elementum ligula. Nullam blandit pretium augue, vitae suscipit mauris lobortis sed. Nam iaculis sem at elit placerat sollicitudin. Ut quis pulvinar leo.</p>
-
-            <h3>Nam ut metus sit amet odio tincidunt.</h3> 
-            <h4 class="subhead">Tincidunt vitae a orci.</h4>
-
-            <p>Maecenas at urna sapien, in lobortis tellus. Morbi eget felis eget tellus dapibus pellentesque. Duis dapibus pulvinar ipsum eu dapibus. Suspendisse potenti. Etiam sollicitudin velit eget nisi vulputate eu semper quam semper. Sed vitae ipsum quam. Nunc sed purus nisl, sit amet luctus nisi. Ut enim massa, sagittis et commodo eget.</p>
-
-            <p>Auctor pretium elit. Nunc enim urna, accumsan sed ullamcorper eu, scelerisque gravida sapien. Phasellus tincidunt nunc elementum turpis ornare sit amet congue diam sodales. Sed interdum neque ut ipsum vestibulum euismod. Nulla nec purus ante. Praesent non diam et leo volutpat dictum in id erat. Donec elementum, leo ac blandit ornare, nunc nunc tincidunt mauris, sed ultricies lorem nibh quis lorem.</p>
-
-            <p>Morbi mauris mauris, aliquam eu sollicitudin id, sollicitudin sed nisl. Cras et nunc a leo pulvinar tincidunt. Suspendisse dignissim, sem sit amet consequat varius, eros enim ullamcorper eros, at tincidunt lacus dolor in turpis. Proin tempus ultricies mauris. Sed eu tortor nisi. Pellentesque non nisi justo, vel suscipit orci. Integer dolor metus, scelerisque aliquet sollicitudin sit amet, posuere at mauris. Nunc sem tellus, consequat at pulvinar quis, fringilla vel libero. Integer faucibus fermentum eros.</p>
-
-            <h3>Aenean tristique odio et dui scelerisque scelerisque porta od.</h3>
-
-            <p>Proin non ipsum ligula, ornare semper purus. Morbi tincidunt ligula sit amet nulla venenatis sit amet tristique nisl pretium. Nunc facilisis, orci et gravida blandit, lectus augue viverra augue, non tempus ligula leo nec arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eu elit quis sem posuere sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris congue dolor a magna accumsan eu pharetra mi porta. Cras eget interdum velit.</p>
-
-            <p>Aenean id nulla in dui iaculis adipiscing. Quisque commodo odio ut lacus auctor pellentesque. Pellentesque egestas pellentesque lorem sed imperdiet. Etiam porta egestas lectus eget interdum. Pellentesque purus neque, elementum non lobortis quis, vulputate ac metus. Etiam et purus a justo accumsan consequat eu elementum ligula. Nullam blandit pretium augue, vitae suscipit mauris lobortis sed. Nam iaculis sem at elit placerat sollicitudin. Ut quis pulvinar leo.</p>
-
-        </article>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-           <h3 class="section-title">Contact Us</h3> 
-
-           <form action="">
-            <label for="contact_name">Name:</label>
-            <input type="text" id="contact_name" name="contact_name">
-
-            <label for="contact_email"> Email Address:</label>
-            <input type="text" id="contact_email" name="contact_email">
-
-            <label for="contact_message">Message</label>
-            <textarea name="contact_message" id="contact_message" cols="30" rows="10"></textarea>
-            <input type="submit" value="submit">
-
-        </form>
-        </div>
-    </section>
 
     <footer class="site-footer">
         <div class="container">
             <nav class="site-nav">
                 <ul>
-                    <li><a class="scroll" href="#top">Home</a></li>
-                    <li><a class="scroll" href="#about">About</a></li>
-                    <li><a class="scroll" href="#contact">Contact</a></li>
+                    <li><a href="../index.html#works" class="scroll">Works</a></li>
+                    <li><a href="../about.html">About</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
 
-    <!-- SCROLL JS FILE -->
-    <script src="js/scroll.js"></script>
-
     <!-- MAIN JS FILE -->
     <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+
+    <!-- ICON FILE -->
+    <script src="https://kit.fontawesome.com/68d6b5750a.js" crossorigin="anonymous"></script>
     
 </body>
 
