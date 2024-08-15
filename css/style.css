@@ -42,6 +42,7 @@ html {
     --my-green80: rgba(128 255 128 /.8);
     --my-black: rgb(10 10 10 /.8);
     --my-black20: rgb(10 10 10 /.2);
+    --my-black30: rgb(10 10 10 /.3);
     --my-black60: rgb(10 10 10 /.6);
 }
 body { 
@@ -124,8 +125,7 @@ h6 {
     line-height: 1.4;
 } 
 
-p,
-.list-paragraph {
+p {
     font-size: 0.75em;   /* 12px */
     /* QUESTION: font weight seems not working, why?? and why is the list outside the margin??? */
     font-weight: 200;
@@ -134,10 +134,18 @@ p,
     max-width: 38em;
 }
 
+dt {
+    color: var(--my-black30)
+}
+
 dt,
 dd {
     font-size: 0.75em;   /* 12px */
     max-width: 38em;
+}
+
+dd {
+    padding: 0, 0, 0 -10em;
 }
 
 /* LINKS */
@@ -151,9 +159,6 @@ a:hover {
 }
 
 /* INDENTATION */
-.list-paragraph {
-
-}
 
 /* a::before {
     content: '';
@@ -218,6 +223,7 @@ img {
 
 /* LAYOUT ---------- */ 
 /* CONTAINER */
+.container-thumbgrid,
 .container {
     margin: 0 auto;
     padding: 2% 4%;
@@ -249,7 +255,10 @@ img {
         font-size: 112.5%;  /* 18px */
     }
     .container {
-        max-width: 1200px;        
+        max-width: 1200px;
+    }
+    .container-thumbgrid {
+        max-width: 90vw;
     }
 }
 
@@ -528,9 +537,9 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
 
 @media (min-width: 768px) {
     .thumbgrid li {
-        /* width: 32.75%; */
-        /* width: 49.5%; */
-        width: 45%;
+        width: 32.75%;        /* three cards row */
+        /* width: 49.5%;         two cards row */
+        /* width: 45%;        two cards row */
     }
 }
 
@@ -654,10 +663,6 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     background-color: rgba(255, 255, 255, 0.4);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-}
-
-.with-blur {
-    
 }
 
 .project-title {
