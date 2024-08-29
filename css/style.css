@@ -65,7 +65,7 @@ body {
 -------------------- */
 
 body {
-	font-family: karla, sans-serif;
+	font-family: 'karla', sans-serif;
 	font-size: 88.75%;  /* 14pt */
 	line-height: 1.4; 
 	color: var(--my-black);
@@ -125,14 +125,20 @@ h6 {
     line-height: 1.4;
 } 
 
-p {
+p, 
+.list-paragraph {
     font-size: 0.75em;   /* 12px */
     /* QUESTION: font weight seems not working, why?? and why is the list outside the margin??? */
     font-weight: 200;
     margin: 1em 0;
     padding: 0;
     max-width: 38em;
+    list-style-position: inside;
 }
+
+/* ul {
+    QUESTION: how can I hang bulletpoints?
+} */
 
 dt {
     color: var(--my-black30)
@@ -409,27 +415,19 @@ img {
     justify-content: center;
     align-items: center;
     padding: 12em 0 12em 0;
-    /* z-index: -1;  */
-    /* position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw; */
-    /* background-color: var(--my-black60);
-    background-repeat: no-repeat; */
 }
 
 /* HOME */
 .solid-view {
-    background-color:hsla(0,100%,50%,1);
+    background-color:hsla(0,0%,0%,1);
 background-image:
-radial-gradient(at 78% 13%, hsla(330,94%,71%,1) 0px, transparent 50%),
-radial-gradient(at 47% 34%, hsla(24,96%,55%,1) 0px, transparent 50%),
-radial-gradient(at 19% 14%, hsla(133,100%,30%,1) 0px, transparent 50%),
-radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
-radial-gradient(at 80% 42%, hsla(9,95%,17%,1) 0px, transparent 50%),
-radial-gradient(at 45% 80%, hsla(22,100%,77%,1) 0px, transparent 50%),
-radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
+radial-gradient(at 40% 20%, hsla(100,30%,70%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(182,30%,70%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(51,30%,70%,1) 0px, transparent 50%),
+radial-gradient(at 80% 50%, hsla(36,30%,70%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(78,30%,70%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(298,30%,70%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(39,30%,70%,1) 0px, transparent 50%);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
@@ -459,8 +457,8 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
 
 .hero-title {
     padding: 0;
-    margin: 3em 0 0 0;
-    text-align: center;
+    margin: 0;
+    text-align: left;
     color: var(--my-white);
     animation-name: fadein-up;
     animation-duration: 2s;
@@ -689,6 +687,13 @@ radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%);
     width: auto;
     background-size: cover;
     background-position: center;
+}
+
+.project-metadata {
+    font-size: 0.75em;   /* 12px */
+    line-height: 1.8;
+    list-style: none;
+    padding-left: 0.25em;
 }
 
 /* QUESTION: how can I make the image responsive in different sizes? */
