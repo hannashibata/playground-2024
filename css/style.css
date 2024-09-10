@@ -740,12 +740,12 @@ radial-gradient(at 0% 0%, hsla(39,30%,70%,1) 0px, transparent 50%); */
     background-image: url(../work_01-typeandprotocol/img/typeandprotocol-hero-3300x2550.jpg);
 }
 
-.solid-view-criminal {
-    background-image: url(../work_02-criminalspinoff/img/criminal-hero.jpg);
+.solid-view-hspl {
+    background-image: url(../work_02-hspl/img/hspl-mock-hero-1600x900.jpg);
 }
 
-.solid-view-hspl {
-    background-image: url(../work_03-hspl/img/hspl-mock-hero-1600x900.jpg);
+.solid-view-criminal {
+    background-image: url(../work_03-criminalspinoff/img/criminal-hero.jpg);
 }
 
 /* TOGGLE NAV ---------- */ 
