@@ -422,22 +422,22 @@ section {
 
 .hero-lookbook:nth-child(1) {
     background-image: url('../img/slideshow-01.jpg');
-    animation-delay: 0s;
+    /* animation-delay: 0s; */
 }
 
 .hero-lookbook:nth-child(2) {
     background-image: url('../img/slideshow-02.jpg');
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
 }
 
 .hero-lookbook:nth-child(3) {
     background-image: url('../img/slideshow-03.jpg');
-    animation-delay: 2s;
+    /* animation-delay: 2s; */
 }
 
 .hero-lookbook:nth-child(4) {
     background-image: url('../img/slideshow-04.jpg');
-    animation-delay: 3s;
+    /* animation-delay: 3s; */
 }
 
 /* QUESTION: The transition is funky: how can I make it look more smooth? And the first image doesn't show up; I'm so confused.*/
